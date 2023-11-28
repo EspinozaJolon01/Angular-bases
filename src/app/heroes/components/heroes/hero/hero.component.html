@@ -1,0 +1,31 @@
+<h1>{{name}}</h1>
+
+<dl>
+  <td>Nombre:</td>
+  <dd> {{ name }} </dd>
+
+  <td>Edad:</td>
+  <dd> {{age}} </dd>
+
+  <td>Metodo:</td>
+  <dd> {{getDescripcion()}} </dd>
+
+  <td>Capitalizado:</td>
+  <dd> {{ getName}}</dd>
+
+</dl>
+
+<button
+  *ngIf="name !== 'Luis'"
+  (click)="chagenHero()" class="btn btn-primary mx-2" >
+  cambiar nombre
+</button>
+
+<button *ngIf="age !== 666 " (click)="changeAge()" class="btn btn-primary">
+  cambiar edad
+</button>
+
+<button  (click)="resetInfgo()" class="btn btn-primary mx-2">
+  restablecer
+</button>
+
